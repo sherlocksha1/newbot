@@ -43,7 +43,7 @@ async def start(client, message):
             InlineKeyboardButton('🤖 Updates', url='https://t.me/EvaMariaUpdates')
             ],[
             InlineKeyboardButton('ℹ️ Help', callback_data='help'),
-            InlineKeyboardButton('😊 About', callback_data='about')
+            InlineKeyboardButton('😁 About', callback_data='about')
             ],[
             InlineKeyboardButton('Dev', url='https://t.me/Latest_Movie_Media')
         ]]
@@ -86,7 +86,7 @@ async def start(client, message):
             InlineKeyboardButton('🤖 Updates', url='https://t.me/EvaMariaUpdates')
             ],[
             InlineKeyboardButton('ℹ️ Help', callback_data='help'),
-            InlineKeyboardButton('😊 About', callback_data='about')
+            InlineKeyboardButton('😁 About', callback_data='about')
             ],[
             InlineKeyboardButton('Dev', url='https://t.me/Latest_Movie_Media')
         ]]
