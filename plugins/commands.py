@@ -90,7 +90,6 @@ async def start(client, message):
             ],[
             InlineKeyboardButton('Dev', url='https://t.me/Latest_Movie_Media')
         ]]
-        ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
             photo=random.choice(PICS),
