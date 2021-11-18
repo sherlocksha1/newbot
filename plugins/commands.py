@@ -18,7 +18,7 @@ async def start(client, message):
     if message.chat.type in ['group', 'supergroup']:
         buttons = [
             [
-                InlineKeyboardButton('🤖 Updates', url='https://t.me/TeamEvamaria')
+                InlineKeyboardButton('🤖 Updates', url='https://t.me/Latest_Movie_Mediaa')
             ],
             [
                 InlineKeyboardButton('ℹ️ Help', url=f"https://t.me/{temp.U_NAME}?start=help"),
@@ -37,15 +37,15 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('➕ Add Me To Your Groups ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('➕ 𝗔𝗱𝗱 𝗠𝗲 𝗧𝗼 𝗬𝗼𝘂𝗿 𝗚𝗿𝗼𝘂𝗽𝘀 ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('🔍 Search', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('🤖 Updates', url='https://t.me/EvaMariaUpdates')
+            InlineKeyboardButton('🔍 𝗦𝗲𝗮𝗿𝗰𝗵 𝗠𝗼𝘃𝗶𝗲𝘀', switch_inline_query_current_chat=''),
+            InlineKeyboardButton('🤖 𝗨𝗽𝗱𝗮𝘁𝗲𝘀', url='https://t.me/Latest_Movie_Mediaa')
             ],[
             InlineKeyboardButton('ℹ️ 𝗙𝗶𝗹𝘁𝗲𝗿𝘀', callback_data='help'),
-            InlineKeyboardButton('😁 About', callback_data='about')
+            InlineKeyboardButton('🔥 𝗚𝗿𝗼𝘂𝗽 🔥', url='https://t.me/Latest_Movie_Media)
             ],[
-            InlineKeyboardButton('Dev', url='https://t.me/Latest_Movie_Media')
+            InlineKeyboardButton('❤ 𝗢𝘄𝗻𝗲𝗿 ❤', url='https://t.me/Lucifer_DevilZ')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
