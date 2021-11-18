@@ -43,7 +43,7 @@ async def start(client, message):
             InlineKeyboardButton('🤖 𝗨𝗽𝗱𝗮𝘁𝗲𝘀', url='https://t.me/Latest_Movie_Mediaa')
             ],[
             InlineKeyboardButton('ℹ️ 𝗙𝗶𝗹𝘁𝗲𝗿𝘀', callback_data='help'),
-            InlineKeyboardButton('🔥 𝗚𝗿𝗼𝘂𝗽 🔥', url='https://t.me/Latest_Movie_Media)
+            InlineKeyboardButton('🔥 𝗚𝗿𝗼𝘂𝗽 🔥', url='https://t.me/Latest_Movie_Media')
             ],[
             InlineKeyboardButton('❤ 𝗢𝘄𝗻𝗲𝗿 ❤', url='https://t.me/Lucifer_DevilZ')
         ]]
@@ -86,7 +86,7 @@ async def start(client, message):
             InlineKeyboardButton('🤖 𝗨𝗽𝗱𝗮𝘁𝗲𝘀', url='https://t.me/Latest_Movie_Mediaa')
             ],[
             InlineKeyboardButton('ℹ️ 𝗙𝗶𝗹𝘁𝗲𝗿𝘀', callback_data='help'),
-            InlineKeyboardButton('🔥 𝗚𝗿𝗼𝘂𝗽 🔥', callback_data='about')
+            InlineKeyboardButton('🔥 𝗚𝗿𝗼𝘂𝗽 🔥', url='https://t.me/Latest_Movie_Media')
             ],[
             InlineKeyboardButton('❤ 𝗢𝘄𝗻𝗲𝗿 ❤', url='https://t.me/Lucifer_DevilZ')
         ]]
