@@ -30,7 +30,7 @@ class script(object):
 • /filters - <code>list all the filters of a chat</code>
 • /del - <code>delete a specific filter in chat</code>
 • /delall - <code>delete the whole filters in a chat (chat owner only)</code>"""
-    HELP_TXT = """<b>🎼Song Download🎼</b>
+    SONG_TXT = """<b>🎼Song Download🎼</b>
 Song Download Module, For Those Who Love Music
 
 <b>🎈 Command 🎈</b>
