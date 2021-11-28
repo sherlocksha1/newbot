@@ -14,10 +14,7 @@ REPO = "നമ്മൾ നമ്മൾ പോലുമറിയാതെ അധ
 # -- Constants End -- #
 
 
-@Client.on_message(
-    filters.command(["alive", "start"], COMMAND_HAND_LER) &
-    f_onw_fliter
-)
+@Client.on_message(filters.command("alive", COMMAND_HAND_LER) & f_onw_fliter)
 async def check_alive(_, message):
     await message.reply_text(ALIVE)
 
