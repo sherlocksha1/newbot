@@ -75,6 +75,7 @@ def a(client, message):
             secmul *= 60
         message.reply_audio(audio_file, caption=rep, parse_mode='HTML',quote=False, title=title, duration=dur, performer=performer, thumb=thumb_name)
         m.delete()
+        message.delete()
     except Exception as e:
         m.edit('**An Error Occured. Please Report This To @dquser!![🎧](https://telegra.ph/file/0254a014cb78c3cca2df0.jpg)**')
         print(e)
