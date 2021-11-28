@@ -50,6 +50,75 @@ Song Download Module, For Those Who Love Music
 - Works in bot pm
 
 Made By @Lucifer_DevilZ"""
+    PIN_TXT ="""<b>PIN MODULE</b>
+<b>Pin :</b>
+
+<b>All The Pin Related Commands Can Be Found Here; Keep Your Chat Up To Date On The Latest News With A Simple Pinned Message!</b>
+
+<b>📚 Commands & Usage:</b>
+
+◉ /pin :- Pin The Message You Replied To Message To Send A Notification To Group Members
+◉ /unpin :- Unpin The Current Pinned Message. If Used As A Reply, Unpins The Replied To Message"""
+    PASTE_TXT = """Help: <b>Paste</b>
+
+Paste some texts or documents on a website!
+
+<b>Commands and Usage:</b>
+
+• /paste [text] - paste the given text on Pasty
+
+<b>NOTE:</b>
+
+• These commands works on both pm and group.
+• These commands can be used by any group member."""
+    PINGS_TXT ="""<b>🌟 Ping:</b>
+
+Helps you to know your ping 🚶🏼‍♂️
+
+<b>Commands:</b>
+
+• /alive - To check you are alive.
+• /help - To get help 
+• /ping - To get your ping 
+• /repo - Source Code. 
+
+<b>🏹Usage🏹 :</b>
+
+• This commands can be used in pms and groups
+• This commands can be used buy everyone in the groups and bots pm
+• Share us for more features"""
+    TELE_TXT = """<b>▫️HELP: Telegraph▪️</b>
+
+Do as you wish with telegra.ph module!
+
+</b>USAGE:</b>
+
+🤧 /telegraph - Send me Picture or Vide Under (5MB)
+
+<b>NOTE:</b>
+
+• This Command Is Available in goups and pms
+• This Command Can be used by everyone"""
+    JSON_TXT ="""<b>JSON:</b>
+
+Bot returns json for all replied messages with /json
+
+<b>Features:</b>
+
+Message Editting JSON
+Pm Support
+Group Support
+
+<b>Note:</b>
+
+Everyone can use this command , if spaming happens bot will automatically ban you from the group."""
+    PURGE_TXT = """<b>💣Purge💣</b>
+    
+Delete A Lot Of Messages From Groups! 
+    
+ <b>ADMIN</b> 
+
+◉ /purge :- Delete All Messages From The Replied To Message, To The Current Message"""
     BUTTON_TXT = """Help: <b>Buttons</b>
 
 - Eva Maria Supports both url and alert inline buttons.
