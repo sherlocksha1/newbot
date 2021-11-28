@@ -64,7 +64,7 @@ def a(client, message):
         )
         print(str(e))
         return
-    m.edit("`Uploading Your File,Please Wait for Some Seconds...`[🎧](https://telegra.ph/file/0254a014cb78c3cca2df0.jpg)")
+    m.edit("`Uploading Your File,Please Wait for Some Seconds...`[🎧](https://telegra.ph/file/ecb41bea0f8ac32e4b374.jpg)")
     try:
         with youtube_dl.YoutubeDL(ydl_opts) as ydl:
             info_dict = ydl.extract_info(link, download=False)
