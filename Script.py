@@ -16,6 +16,9 @@ class script(object):
 
 <b>DEVS:</b>
 - <a href=https://t.me/TeamEvamaria>Team Eva Maria</a>"""
+    WHOIS_TXT ="""<b>WHOIS MODULE</b>
+Note:- Give a user details
+•/whois :-give a user full details"""
     FUN_TXT ="""<b>FUN MODULE</b> 
     
 <b>🎲 NOTHING MUCH JUST SOME FUN THINGS</b>
