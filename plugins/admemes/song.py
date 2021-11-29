@@ -49,7 +49,7 @@ def a(client, message):
             #     m.edit("Exceeded 30mins cap")
             #     return
 
-            performer = f"[@dquser]"
+            performer = f"[@Lucifer_DevilZ]"
             thumb_name = f'thumb{message.message_id}.jpg'
             thumb = requests.get(thumbnail, allow_redirects=True)
             open(thumb_name, 'wb').write(thumb.content)
@@ -79,7 +79,7 @@ def a(client, message):
         m.delete()
         message.delete()
     except Exception as e:
-        m.edit('**An Error Occured. Please Report This To @dquser!![🎧](https://telegra.ph/file/0254a014cb78c3cca2df0.jpg)**')
+        m.edit('**An Error Occured. Please Report This To @Lucifer_DevilZ!![🎧](https://telegra.ph/file/0254a014cb78c3cca2df0.jpg)**')
         print(e)
     try:
         os.remove(audio_file)
