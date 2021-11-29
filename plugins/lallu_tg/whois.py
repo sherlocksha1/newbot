@@ -1,5 +1,5 @@
 # codes added by @lallu_tg
-# use with all proper credits
+# use with  proper credits
 
 """Get info about the replied user
 Syntax: .whois"""
