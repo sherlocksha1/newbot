@@ -460,7 +460,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('🖥 Paste', callback_data='pastes')
             ],[
             InlineKeyboardButton('🤡𝐅𝐮𝐧', callback_data='fun'), 
-            InlineKeyboardButton('🧾 Json', callback_data='son')
+            InlineKeyboardButton('🧾 Json', callback_data='son'),
+            InlineKeyboardButton('🛑 Gtrans', callback_data='ttss')
             ],[
             InlineKeyboardButton('💣 Purge', callback_data='purges'),
             InlineKeyboardButton('✴️ Ping', callback_data='pings'),
@@ -548,6 +549,16 @@ async def cb_handler(client: Client, query: CallbackQuery):
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
             text=script.PINGS_TXT,
+            reply_markup=reply_markup,
+            parse_mode='html'
+        )
+    elif query.data == "ttss":
+        buttons = [[
+            InlineKeyboardButton('👩‍🦯 Back', callback_data='help')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.GTRANS_TXT,
             reply_markup=reply_markup,
             parse_mode='html'
         )
