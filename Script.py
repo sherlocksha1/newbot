@@ -74,6 +74,19 @@ Paste some texts or documents on a website!
 
 • These commands works on both pm and group.
 • These commands can be used by any group member."""
+    GTRANS_TXT = """Help: <b>Google Translator</b>
+
+Translate texts to a specific language!
+
+<b>Commands and Usage:</b>
+
+• /tr [language code][reply] - translate replied message to specific language.
+
+<b>NOTE:</b>
+
+• IMDb should have admin privillage.
+• These commands works on both pm and group.
+• IMDb can translate texts to 200+ languages."""
     PINGS_TXT ="""<b>🌟 Ping:</b>
 
 Helps you to know your ping 🚶🏼‍♂️
