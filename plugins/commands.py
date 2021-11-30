@@ -40,7 +40,7 @@ async def start(client, message):
             InlineKeyboardButton('➕ 𝗔𝗱𝗱 𝗠𝗲 𝗧𝗼 𝗬𝗼𝘂𝗿 𝗚𝗿𝗼𝘂𝗽𝘀 ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
             InlineKeyboardButton('🔍 𝗦𝗲𝗮𝗿𝗰𝗵 𝗠𝗼𝘃𝗶𝗲𝘀', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('🤖 𝗨𝗽𝗱𝗮𝘁𝗲𝘀', url='https://t.me/Latest_Movie_Mediaa')
+            InlineKeyboardButton('🤖 𝗨𝗽𝗱𝗮𝘁𝗲𝘀', url='https://t.me/Ls_Supportz')
             ],[
             InlineKeyboardButton('ℹ️ 𝗙𝗶𝗹𝘁𝗲𝗿𝘀', callback_data='help'),
             InlineKeyboardButton('🔥 𝗚𝗿𝗼𝘂𝗽 🔥', url='https://t.me/Latest_Movie_Media')
@@ -85,7 +85,7 @@ async def start(client, message):
             InlineKeyboardButton('➕ 𝗔𝗱𝗱 𝗠𝗲 𝗧𝗼 𝗬𝗼𝘂𝗿 𝗚𝗿𝗼𝘂𝗽𝘀 ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
             InlineKeyboardButton('🔍 𝗦𝗲𝗮𝗿𝗰𝗵 𝗠𝗼𝘃𝗶𝗲𝘀', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('🤖 𝗨𝗽𝗱𝗮𝘁𝗲𝘀', url='https://t.me/Latest_Movie_Mediaa')
+            InlineKeyboardButton('🤖 𝗨𝗽𝗱𝗮𝘁𝗲𝘀', url='https://t.me/Ls_Supportz')
             ],[
             InlineKeyboardButton('ℹ️ 𝗙𝗶𝗹𝘁𝗲𝗿𝘀', callback_data='help'),
             InlineKeyboardButton('🔥 𝗚𝗿𝗼𝘂𝗽 🔥', url='https://t.me/Latest_Movie_Media')
