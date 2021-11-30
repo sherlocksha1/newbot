@@ -11,6 +11,7 @@ imdbpy
 youtube-dl
 youtube_search
 requests
+googletrans==3.1.0a0
 telegraph
 beautifulsoup4
 aiohttp==3.7.4
