@@ -74,13 +74,13 @@ Paste some texts or documents on a website!
 
 • These commands works on both pm and group.
 • These commands can be used by any group member."""
-    GTRANS_TXT = """Help: <b>Google Translator</b>
+    GTRANS_TXT = """Help: <b> TTS 🎤 module:</b>
 
-Translate texts to a specific language!
+Translate text to speech
 
 <b>Commands and Usage:</b>
 
-• /tr [language code][reply] - translate replied message to specific language.
+• /tts <text> : convert text to speech
 
 <b>NOTE:</b>
 
