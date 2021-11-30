@@ -46,6 +46,8 @@ async def start(client, message):
             InlineKeyboardButton('🔥 𝗚𝗿𝗼𝘂𝗽 🔥', url='https://t.me/Latest_Movie_Media')
             ],[
             InlineKeyboardButton('❤ 𝗢𝘄𝗻𝗲𝗿 ❤', url='https://t.me/Lucifer_DevilZ')
+            ],[
+            InlineKeyboardButton('💖 𝗖𝗵𝗮𝗻𝗻𝗲𝗹 💖', url='https://t.me/Latest_Movie_Mediaa')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -89,6 +91,8 @@ async def start(client, message):
             InlineKeyboardButton('🔥 𝗚𝗿𝗼𝘂𝗽 🔥', url='https://t.me/Latest_Movie_Media')
             ],[
             InlineKeyboardButton('❤ 𝗢𝘄𝗻𝗲𝗿 ❤', url='https://t.me/Lucifer_DevilZ')
+            ],[
+            InlineKeyboardButton('💖 𝗖𝗵𝗮𝗻𝗻𝗲𝗹 💖', url='https://t.me/Latest_Movie_Mediaa')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
