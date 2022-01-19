@@ -25,3 +25,4 @@ yt-dlp
 pypng
 Pillow
 wget
+aiofiles
