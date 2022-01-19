@@ -759,14 +759,16 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "help":
         buttons = [[
             InlineKeyboardButton('Manual Filter', callback_data='manuelfilter'),
-            InlineKeyboardButton('Auto Filter', callback_data='autofilter')
+            InlineKeyboardButton('Auto Filter', callback_data='autofilter'),
+            InlineKeyboardButton('Connection', callback_data='coct')
             ],[
-            InlineKeyboardButton('Connection', callback_data='coct'),
             InlineKeyboardButton('Song  🎶', callback_data='songs'),
-            InlineKeyboardButton('Extra Mods', callback_data='extra')
+            InlineKeyboardButton('Extra Mods', callback_data='extra'),
+            InlineKeyboardButton("𝖵𝗂𝖽𝖾𝗈", callback_data='video')
             ],[
             InlineKeyboardButton('📌 Pin', callback_data='pin'), 
-            InlineKeyboardButton('🖥 Paste', callback_data='pastes')
+            InlineKeyboardButton('🖥 Paste', callback_data='pastes'),
+            InlineKeyboardButton("𝖨𝗆𝖺𝗀𝖾", callback_data='image')
             ],[
             InlineKeyboardButton('🤡𝐅𝐮𝐧', callback_data='fun'), 
             InlineKeyboardButton('🧾 Json', callback_data='son'),
@@ -776,7 +778,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('✴️ Ping', callback_data='pings'),
             InlineKeyboardButton('📸 Telegraph', callback_data='tele')
             ],[
-            InlineKeyboardButton('🤔 Whois', callback_data='whois')
+            InlineKeyboardButton('🤔 Whois', callback_data='whois'),
+            InlineKeyboardButton('𝖱𝖾𝗌𝗍𝗋𝖾𝖼', callback_data='restric'),
+            InlineKeyboardButton('𝖨𝗇-𝖪𝗂𝖼𝗄', callback_data='zombies')
             ],[
             InlineKeyboardButton('🏠 Home', callback_data='start'),
             InlineKeyboardButton('🔮 Status', callback_data='stats')
@@ -801,6 +805,28 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode='html'
         )
+    elif query.data == "restric":
+        buttons = [[
+            InlineKeyboardButton('🔙 𝖡𝖺𝖼𝗄', callback_data='help')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.RESTRIC_TXT,
+            disable_web_page_preview=True,
+            reply_markup=reply_markup,
+            parse_mode='html'
+        )
+    elif query.data == "image":
+        buttons= [[
+            InlineKeyboardButton('🔙 𝖡𝖺𝖼𝗄', callback_data='help')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.IMAGE_TXT.format(temp.B_NAME),
+            disable_web_page_preview=True,
+            reply_markup=reply_markup,
+            parse_mode='html'
+        )
     elif query.data == "whois":
         buttons = [[
             InlineKeyboardButton('ʙᴀᴄᴋ', callback_data='help')
@@ -811,6 +837,17 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode='html'
         )
+    elif query.data == "zombies":
+        buttons = [[
+            InlineKeyboardButton('🔙 𝖡𝖺𝖼𝗄', callback_data='help')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.ZOMBIES_TXT,
+            disable_web_page_preview=True,
+            reply_markup=reply_markup,
+            parse_mode='html'
+        )
     elif query.data == "fun":
         buttons = [[
             InlineKeyboardButton('👩‍🦯 Back', callback_data='help')
@@ -818,6 +855,16 @@ async def cb_handler(client: Client, query: CallbackQuery):
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
             text=script.FUN_TXT,
+            reply_markup=reply_markup,
+            parse_mode='html'
+        )
+    elif query.data == "video":
+        buttons = [[
+            InlineKeyboardButton('🔙 𝖡𝖺𝖼𝗄', callback_data='song')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.VIDEO_TXT,
             reply_markup=reply_markup,
             parse_mode='html'
         )
