@@ -211,3 +211,19 @@ Added By - {}
 ID - <code>{}</code>
 Name - {}
 """
+    CREATOR_REQUIRED = """❗<b>You have To Be The Group Creator To Do That.</b>"""
+      
+    INPUT_REQUIRED = "❗ **Arguments Required**"
+      
+    KICKED = """✔️ Successfully Kicked {} Members According To The Arguments Provided."""
+      
+    START_KICK = """🚮 Removing Inactive Members This May Take A While..."""
+      
+    ADMIN_REQUIRED = """❗<b>I Am Not An Admin Here\n__Leaving This Chat, Add Me Again As Admin With Ban User Permission.</b>"""
+      
+    DKICK = """✔️ Kicked {} Deleted Accounts Successfully."""
+      
+    FETCHING_INFO = """<b>Collecting Users Information...</b>"""
+      
+    STATUS = """{}\n<b>Chat Member Status</b>**\n\n```<i>Recently``` - {}\n```Within Week``` - {}\n```Within Month``` - {}\n```Long Time Ago``` - {}\nDeleted Account - {}\nBot - {}\nUnCached - {}</i>
+"""
