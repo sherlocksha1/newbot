@@ -26,3 +26,6 @@ pypng
 Pillow
 wget
 aiofiles
+psutil
+wheel
+humanize
