@@ -193,8 +193,8 @@ This module only works for my admins
 • /chats - <code>to get list of the my chats and ids </code>
 • /leave  - <code>to leave from a chat.</code>
 • /disable  -  <code>do disable a chat.</code>
-• /ban  - <code>to ban a user.</code>
-• /unban  - <code>to unban a user.</code>
+• /ban_user  - <code>to ban a user.</code>
+• /unban_user  - <code>to unban a user.</code>
 • /channel - <code>to get list of total connected channels</code>
 • /broadcast - <code>to broadcast a message to all users</code>"""
     STATUS_TXT = """★ 𝚃𝙾𝚃𝙰𝙻 𝙵𝙸𝙻𝙴𝚂: <code>{}</code>
