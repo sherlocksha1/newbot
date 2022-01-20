@@ -30,3 +30,4 @@ psutil
 wheel
 humanize
 ytthumb
+pypdf2
