@@ -250,6 +250,19 @@ Name - {}
 
 𝖬𝖺𝖽𝖾 𝖻𝗒 @Don_Sflix"""
 
+    STICKER_TXT = """𝙃𝙚𝙡𝙥 𝙁𝙤𝙧 𝙎𝙩𝙞𝙘𝙠𝙚𝙧 𝙄𝙙
+• 𝙐𝙨𝙖𝙜𝙚
+To Get Sticker ID
+  ⭕ 𝙃𝙤𝙬 𝙏𝙤 𝙐𝙨𝙚
+◉ Reply To Any Sticker [/stickerid]"""
+
+    YTTHUMB_TXT = """𝙃𝙚𝙡𝙥 𝙁𝙤𝙧 𝘿𝙤𝙬𝙣𝙡𝙤𝙖𝙙 𝙔𝙤𝙪𝙩𝙪𝙗𝙚 𝙑𝙞𝙙𝙚𝙤 𝙏𝙝𝙪𝙢𝙗𝙣𝙖𝙞𝙡
+⭕𝙃𝙤𝙬 𝙏𝙤 𝙐𝙨𝙚
+𝘛𝘺𝘱𝘦 /ytthumb 𝘈𝘯𝘥 𝘝𝘪𝘥𝘦𝘰 𝘓𝘪𝘯𝘬
+
+• 𝘌𝘹𝘢𝘮𝘱𝘭𝘦
+/ytthumb https://youtu.be/yourlink"""
+
     RESTRIC_TXT = """➤ 𝐇𝐞𝐥𝐩: Mᴜᴛᴇ 🚫
 
 𝚃𝚑𝚎𝚜𝚎 𝚊𝚛𝚎 𝚝𝚑𝚎 𝚌𝚘𝚖𝚖𝚊𝚗𝚍𝚜 𝚊 𝚐𝚛𝚘𝚞𝚙 𝚊𝚍𝚖𝚒𝚗 𝚌𝚊𝚗 𝚞𝚜𝚎 𝚝𝚘 𝚖𝚊𝚗𝚊𝚐𝚎 𝚝𝚑𝚎𝚒𝚛 𝚐𝚛𝚘𝚞𝚙 𝚖𝚘𝚛𝚎 𝚎𝚏𝚏𝚒𝚌𝚒𝚎𝚗𝚝𝚕𝚢.
