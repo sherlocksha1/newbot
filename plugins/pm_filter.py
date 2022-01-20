@@ -758,32 +758,32 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "help":
         buttons = [[
-            InlineKeyboardButton('Manual Filter', callback_data='manuelfilter'),
-            InlineKeyboardButton('Auto Filter', callback_data='autofilter'),
-            InlineKeyboardButton('Connection', callback_data='coct')
+            InlineKeyboardButton('Mᴀɴɴᴜᴀʟ Fɪʟᴛᴇʀ', callback_data='manuelfilter'),
+            InlineKeyboardButton('Aᴜᴛᴏ Fɪʟᴛᴇʀ', callback_data='autofilter'),
+            InlineKeyboardButton('Cᴏɴɴᴇᴄᴛɪᴏɴ', callback_data='coct')
             ],[
-            InlineKeyboardButton('Song  🎶', callback_data='songs'),
-            InlineKeyboardButton('Extra Mods', callback_data='extra'),
-            InlineKeyboardButton("𝖵𝗂𝖽𝖾𝗈", callback_data='video')
+            InlineKeyboardButton('Sᴏɴɢ  🎶', callback_data='songs'),
+            InlineKeyboardButton('Exᴛʀᴀ Mᴏᴅs', callback_data='extra'),
+            InlineKeyboardButton("Vɪᴅᴇᴏ 📲", callback_data='video')
             ],[
-            InlineKeyboardButton('📌 Pin', callback_data='pin'), 
-            InlineKeyboardButton('🖥 Paste', callback_data='pastes'),
-            InlineKeyboardButton("𝖨𝗆𝖺𝗀𝖾", callback_data='image')
+            InlineKeyboardButton('📌 Pɪɴ', callback_data='pin'), 
+            InlineKeyboardButton('🖥 Pᴀsᴛᴇ', callback_data='pastes'),
+            InlineKeyboardButton("Iᴍᴀɢᴇ 💻", callback_data='image')
             ],[
-            InlineKeyboardButton('🤡𝐅𝐮𝐧', callback_data='fun'), 
-            InlineKeyboardButton('🧾 Json', callback_data='son'),
-            InlineKeyboardButton('🎤 TTS', callback_data='ttss')
+            InlineKeyboardButton('🤡Fᴜɴ', callback_data='fun'), 
+            InlineKeyboardButton('🧾 Jsᴏɴ', callback_data='son'),
+            InlineKeyboardButton('🎤 Tᴛs', callback_data='ttss')
             ],[
-            InlineKeyboardButton('💣 Purge', callback_data='purges'),
-            InlineKeyboardButton('✴️ Ping', callback_data='pings'),
-            InlineKeyboardButton('📸 Telegraph', callback_data='tele')
+            InlineKeyboardButton('💣 Pᴜʀɢᴇ', callback_data='purges'),
+            InlineKeyboardButton('✴️ Pɪɴɢ', callback_data='pings'),
+            InlineKeyboardButton('📸 Tᴇʟᴇɢʀᴀᴘʜ', callback_data='tele')
             ],[
-            InlineKeyboardButton('🤔 Whois', callback_data='whois'),
-            InlineKeyboardButton('𝖱𝖾𝗌𝗍𝗋𝖾𝖼', callback_data='restric'),
-            InlineKeyboardButton('𝖨𝗇-𝖪𝗂𝖼𝗄', callback_data='zombies')
+            InlineKeyboardButton('🤔 Wʜᴏɪs', callback_data='whois'),
+            InlineKeyboardButton('Mᴜᴛᴇ 🚫', callback_data='restric'),
+            InlineKeyboardButton('Iɴ-Kɪᴄᴋ ⚠️', callback_data='zombies')
             ],[
-            InlineKeyboardButton('🏠 Home', callback_data='start'),
-            InlineKeyboardButton('🔮 Status', callback_data='stats')
+            InlineKeyboardButton('🏠 Hᴏᴍᴇ', callback_data='start'),
+            InlineKeyboardButton('🔮 Sᴛᴀᴛᴜs', callback_data='stats')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
