@@ -31,3 +31,4 @@ wheel
 humanize
 ytthumb
 pypdf2
+PyPDF2
