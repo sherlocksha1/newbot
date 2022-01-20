@@ -782,12 +782,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('Mᴜᴛᴇ 🚫', callback_data='restric'),
             InlineKeyboardButton('Iɴ-Kɪᴄᴋ ⚠️', callback_data='zombies')
             ],[
-            InlineKeyboardButton("𝖱𝖾𝗉𝗈𝗋𝗍", callback_data='report'),
-            InlineKeyboardButton("𝖸𝗍-𝖳𝗁𝗎𝗆𝖻", callback_data='ytthumb'),
-            InlineKeyboardButton("𝖲𝗍𝗂𝖼𝗄𝖾𝗋-𝖨𝖣", callback_data='sticker')
+            InlineKeyboardButton("Rᴇᴘᴏʀᴛ 📣", callback_data='report'),
+            InlineKeyboardButton("Yᴛ- Tʜᴜᴍʙ🖥️ ", callback_data='ytthumb'),
+            InlineKeyboardButton("Sᴛɪᴄᴋᴇʀ-Iᴅ 🔍", callback_data='sticker')
             ],[
             InlineKeyboardButton('🏠 Hᴏᴍᴇ', callback_data='start'),
-            InlineKeyboardButton("𝖠𝗎𝖽𝗂𝗈𝖻𝗈𝗈𝗄", callback_data='abook'),
+            InlineKeyboardButton("Aᴜᴅɪᴏ Bᴏᴏᴋ 📑", callback_data='abook'),
             InlineKeyboardButton('🔮 Sᴛᴀᴛᴜs', callback_data='stats')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
