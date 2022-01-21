@@ -787,10 +787,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton("Sᴛɪᴄᴋᴇʀ-Iᴅ 🔍", callback_data='sticker')
             ],[
             InlineKeyboardButton("𝖢𝗈𝗏𝗂𝖽𝖾", callback_data='corona'),
+            InlineKeyboardButton("Aᴜᴅɪᴏ Bᴏᴏᴋ 📑", callback_data='abook'),
             InlineKeyboardButton("𝖲𝗁𝗈𝗋𝗍-𝖴𝗋𝗅", callback_data='urlshort')
             ],[
             InlineKeyboardButton('🏠 Hᴏᴍᴇ', callback_data='start'),
-            InlineKeyboardButton("Aᴜᴅɪᴏ Bᴏᴏᴋ 📑", callback_data='abook'),
             InlineKeyboardButton('🔮 Sᴛᴀᴛᴜs', callback_data='stats')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
