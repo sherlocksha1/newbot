@@ -786,6 +786,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton("Yᴛ- Tʜᴜᴍʙ🖥️ ", callback_data='ytthumb'),
             InlineKeyboardButton("Sᴛɪᴄᴋᴇʀ-Iᴅ 🔍", callback_data='sticker')
             ],[
+            InlineKeyboardButton("𝖢𝗈𝗏𝗂𝖽𝖾", callback_data='corona'),
+            InlineKeyboardButton("𝖲𝗁𝗈𝗋𝗍-𝖴𝗋𝗅", callback_data='urlshort')
+            ],[
             InlineKeyboardButton('🏠 Hᴏᴍᴇ', callback_data='start'),
             InlineKeyboardButton("Aᴜᴅɪᴏ Bᴏᴏᴋ 📑", callback_data='abook'),
             InlineKeyboardButton('🔮 Sᴛᴀᴛᴜs', callback_data='stats')
@@ -839,6 +842,28 @@ async def cb_handler(client: Client, query: CallbackQuery):
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
             text=script.WHOIS_TXT,
+            reply_markup=reply_markup,
+            parse_mode='html'
+        )
+    elif query.data == "corona":
+        buttons = [[
+            InlineKeyboardButton('🔙 𝖡𝖺𝖼𝗄', callback_data='help')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.CORONA_TXT,
+            disable_web_page_preview=True,
+            reply_markup=reply_markup,
+            parse_mode='html'
+        )
+    elif query.data == "urlshort":
+        buttons = [[
+            InlineKeyboardButton('🔙 𝖡𝖺𝖼𝗄', callback_data='help')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.URLSHORT_TXT,
+            disable_web_page_preview=True,
             reply_markup=reply_markup,
             parse_mode='html'
         )
