@@ -1,4 +1,3 @@
-
 from pyrogram import Client, filters
 import datetime
 import time
@@ -28,7 +27,7 @@ async def verupikkals(bot, message):
         if pti:
             success += 1
         elif pti == False:
-            if sh == "Bocked":
+            if sh == "Blocked":
                 blocked+=1
             elif sh == "Deleted":
                 deleted += 1
