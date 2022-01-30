@@ -1,12 +1,7 @@
-if [ -z $UPSTREAM_REPO ]
-then
-  echo "Cloning main Repository"
-  git clone https://git.heroku.com/luciferevamaria.git /luciferevamaria
-else
-  echo "Cloning Custom Repo from $UPSTREAM_REPO "
-  git clone $UPSTREAM_REPO /luciferevamaria
-fi
-cd /luciferevamaria
-pip freeze > requirements.txt
-echo "Starting Bot...."
+echo "Cloning Repo, Please Wait..."
+git clone -b master https://github.com/Adithyanadii/LS-BoTz.git /LS-BoTz
+cd /LS-BoTz
+echo "Installing Requirements..."
+pip3 install -U -r requirements.txt
+echo "Starting Bot, Please Wait..."
 python3 bot.py
