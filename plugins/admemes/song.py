@@ -15,21 +15,25 @@ from youtubesearchpython import SearchVideos
 from yt_dlp import YoutubeDL
 import youtube_dl
 from youtube_search import YoutubeSearch
+import requests
 
-#====================Commands============================#
+## Extra Fns -------------------------------
 
+# Convert hh:mm:ss to seconds
 def time_to_seconds(time):
     stringt = str(time)
     return sum(int(x) * 60 ** i for i, x in enumerate(reversed(stringt.split(':'))))
 
 
-@Client.on_message(filters.command("song") & ~filters.channel & ~filters.edited)
+## Commands --------------------------------
+
+@Client.on_message(filters.command(["song", "sf"]) & ~filters.channel & ~filters.edited)
 def a(client, message):
     query = ''
     for i in message.command[1:]:
         query += ' ' + str(i)
     print(query)
-    m = message.reply('🔎 𝗦𝗲𝗮𝗿𝗰𝗵𝗶𝗻𝗴 𝘁𝗵𝗲 𝗦𝗼𝗻𝗴...')
+    m = message.reply('`𝙵𝚒𝚗𝚍𝚒𝚗𝚐 𝚢𝚘𝚞𝚛 𝚜𝚘𝚗𝚐`')
     ydl_opts = {"format": "bestaudio[ext=m4a]"}
     try:
         results = []
@@ -60,36 +64,36 @@ def a(client, message):
 
         except Exception as e:
             print(e)
-            m.edit('𝐅𝐨𝐮𝐧𝐝 𝐍𝐨𝐭𝐡𝐢𝐧𝐠. 𝐓𝐫𝐲 𝐂𝐡𝐚𝐧𝐠𝐢𝐧𝐠 𝐓𝐡𝐞 𝐒𝐩𝐞𝐥𝐥𝐢𝐧𝐠 𝐀 𝐋𝐢𝐭𝐭𝐥𝐞 😐')
+            m.edit("**𝐈 𝘾𝙖𝙣'𝙩 𝙁𝙞𝙣𝙙 𝘼𝙣𝙮𝙩𝙝𝙞𝙣𝙜 𝐑𝐞𝐥𝐚𝐭𝐞𝐝 𝐓𝐨 𝐓𝐡𝐚𝐭.𝐏𝐥𝐞𝐚𝐬𝐞 𝐭𝐫𝐲 𝐚𝐧𝐨𝐭𝐡𝐞𝐫 𝐬𝐨𝐧𝐠 𝐨𝐫 𝐮𝐬𝐞 𝐜𝐨𝐫𝐫𝐞𝐜𝐭 𝐬𝐩𝐞𝐥𝐥𝐢𝐧𝐠!**")
             return
     except Exception as e:
         m.edit(
-            "❎ 𝐹𝑜𝑢𝑛𝑑 𝑁𝑜𝑡ℎ𝑖𝑛𝑔. 𝐒𝐨𝐫𝐫𝐲.\n\n𝖯𝗅𝖾𝖺𝗌𝖾 𝖳𝗋𝗒 𝖠𝗀𝖺𝗂𝗇 𝖮𝗋 𝖲𝖾𝖺𝗋𝖼𝗁 𝖺𝗍 Google.com 𝖥𝗈𝗋 𝖢𝗈𝗋𝗋𝖾𝖼𝗍 𝖲𝗉𝖾𝗅𝗅𝗂𝗇𝗀 𝗈𝖿 𝗍𝗁𝖾 𝙎𝙤𝙣𝙜.\n\nEg.`/song Believer`"
+            "**𝐄𝐧𝐭𝐞𝐫 𝐒𝐨𝐧𝐠 𝐍𝐚𝐦𝐞 𝐰𝐢𝐭𝐡 𝐂𝐨𝐦𝐦𝐚𝐧𝐝**❗\nFor 𝐄𝐱𝐚𝐦𝐩𝐥𝐞: `/song 𝙎𝙪𝙣𝙛𝙡𝙤𝙬𝙚𝙧`"
         )
         print(str(e))
         return
-    m.edit("`Uploading Your File,Please Wait for Some Seconds...`[🎧](https://telegra.ph/file/ecb41bea0f8ac32e4b374.jpg)")
+    m.edit("`𝙐𝙥𝙡𝙤𝙖𝙙𝙞𝙣𝙜 𝙋𝙡𝙚𝙖𝙨𝙚 𝙒𝙖𝙞𝙩 𝙏𝙝𝙞𝙨 𝙈𝙞𝙜𝙝𝙩 𝙗𝙚 𝙏𝙖𝙠𝙚 𝙎𝙤𝙢𝙚 𝙈𝙞𝙣𝙪𝙩𝙚𝙨`")
     try:
         with youtube_dl.YoutubeDL(ydl_opts) as ydl:
             info_dict = ydl.extract_info(link, download=False)
             audio_file = ydl.prepare_filename(info_dict)
             ydl.process_info(info_dict)
-        rep =  f'🎧 𝗧𝗶𝘁𝘁𝗹𝗲 : <a href="{link}">{title}</a>\n⏳ 𝗗𝘂𝗿𝗮𝘁𝗶𝗼𝗻 : {duration}\n👀 𝗩𝗶𝗲𝘄𝘀 : {views}\n\n📮 𝗕𝘆: {message.from_user.mention()}'
+        rep = f'🎹 <b>𝑻𝒊𝒕𝒍𝒆:</b> <a href="{link}">{title}</a>\n🎙️ <b>𝑫𝒖𝒓𝒂𝒕𝒊𝒐𝒏:</b> <code>{duration}</code>\n🎵 <b>𝑽𝒊𝒆𝒘𝒔:</b> <code>{views}</code>\n🙋 𝖱𝖾𝗊 𝖡𝗒: </b> {message.from_user.mention()}'
         secmul, dur, dur_arr = 1, 0, duration.split(':')
         for i in range(len(dur_arr)-1, -1, -1):
             dur += (int(dur_arr[i]) * secmul)
             secmul *= 60
-        message.reply_audio(audio_file, caption=rep, parse_mode='HTML',quote=False, title=title, duration=dur, performer=performer, thumb=thumb_name)
+        message.reply_audio(audio_file, caption=rep, parse_mode='HTML',quote=False, title=title, duration=dur, performer=performer, thumb=thumb_name, reply_to_message_id=message.message_id)
         m.delete()
-        message.delete()
     except Exception as e:
-        m.edit('**An Error Occured. Please Report This To @Lucifer_DevilZ!![🎧](https://telegra.ph/file/0254a014cb78c3cca2df0.jpg)**')
+        m.edit('**𝐀𝐧 𝐄𝐫𝐫𝐨𝐫 𝐎𝐜𝐜𝐮𝐫𝐞𝐝. 𝐏𝐥𝐞𝐚𝐬𝐞 𝐑𝐞𝐩𝐨𝐫𝐭 𝐓𝐡𝐢𝐬 𝐓𝐨 @Sflix2kchats!!**')
         print(e)
     try:
         os.remove(audio_file)
         os.remove(thumb_name)
     except Exception as e:
         print(e)
+
 
 def get_text(message: Message) -> [None,str]:
     text_to_return = message.text
