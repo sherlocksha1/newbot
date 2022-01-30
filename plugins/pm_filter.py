@@ -207,14 +207,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     "I'm not connected to any groups!\nCheck /connections or connect to any groups",
                     quote=True
                 )
-                return await query.answer('Piracy Is Crime')
-
+                return
         elif chat_type in ["group", "supergroup"]:
             grp_id = query.message.chat.id
             title = query.message.chat.title
 
         else:
-            return await query.answer('Piracy Is Crime')
+            return
 
         st = await client.get_chat_member(grp_id, userid)
         if (st.status == "creator") or (str(userid) in ADMINS):
@@ -312,7 +311,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 f"Some error occurred!!",
                 parse_mode="md"
             )
-        return await query.answer('Piracy Is Crime')
+        return
     elif "deletecb" in query.data:
         await query.answer()
 
@@ -758,6 +757,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton("Aᴜᴅɪᴏ Bᴏᴏᴋ 📑", callback_data='abook'),
             InlineKeyboardButton("Sʜᴏʀᴛ-Uʀʟ 🔖", callback_data='urlshort')
             ],[
+            InlineKeyboardButton("𝖥𝗂𝗅𝖾 𝖲𝗍𝗈𝗋𝖾", callback_data='newdata')
+            ],[
             InlineKeyboardButton('🏠 Hᴏᴍᴇ', callback_data='start'),
             InlineKeyboardButton('𝖦𝗍𝗋𝖺𝗇𝗌', callback_data='gtrans'),
             InlineKeyboardButton('🔮 Sᴛᴀᴛᴜs', callback_data='stats')
@@ -1065,6 +1066,16 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode='html'
         )
+    elif query.data == "newdata":
+        buttons = [[
+            InlineKeyboardButton('🔙 𝖡𝖺𝖼𝗄', callback_data='help')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.FILE_TXT,
+            reply_markup=reply_markup,
+            parse_mode='html'
+        )
     elif query.data == "songs":
         buttons = [[
             InlineKeyboardButton('👩‍🦯 Back', callback_data='help')
@@ -1118,7 +1129,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
         if str(grp_id) != str(grpid):
             await query.message.edit("Your Active Connection Has Been Changed. Go To /settings.")
-            return await query.answer('Piracy Is Crime')
+            return 
 
         if status == "True":
             await save_group_settings(grpid, set_type, False)
