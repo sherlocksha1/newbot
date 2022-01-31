@@ -758,9 +758,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton("Sʜᴏʀᴛ-Uʀʟ 🔖", callback_data='urlshort')
             ],[
             InlineKeyboardButton("𝖥𝗂𝗅𝖾 𝖲𝗍𝗈𝗋𝖾", callback_data='newdata')
+            InlineKeyboardButton('𝖦𝗍𝗋𝖺𝗇𝗌', callback_data='gtrans'),
             ],[
             InlineKeyboardButton('🏠 Hᴏᴍᴇ', callback_data='start'),
-            InlineKeyboardButton('𝖦𝗍𝗋𝖺𝗇𝗌', callback_data='gtrans'),
             InlineKeyboardButton('🔮 Sᴛᴀᴛᴜs', callback_data='stats')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
