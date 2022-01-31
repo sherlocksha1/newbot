@@ -769,6 +769,53 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode='html'
         )
+    elif query.data == "hellp":
+        buttons = [[
+            InlineKeyboardButton('Mᴀɴɴᴜᴀʟ Fɪʟᴛᴇʀ', callback_data='manuelfilter'),
+            InlineKeyboardButton('Aᴜᴛᴏ Fɪʟᴛᴇʀ', callback_data='autofilter'),
+            InlineKeyboardButton('Cᴏɴɴᴇᴄᴛɪᴏɴ', callback_data='coct')
+            ],[
+            InlineKeyboardButton('Sᴏɴɢ  🎶', callback_data='songs'),
+            InlineKeyboardButton('Exᴛʀᴀ Mᴏᴅs', callback_data='extra'),
+            InlineKeyboardButton("Vɪᴅᴇᴏ 📲", callback_data='video')
+            ],[
+            InlineKeyboardButton('📌 Pɪɴ', callback_data='pin'), 
+            InlineKeyboardButton('🖥 Pᴀsᴛᴇ', callback_data='pastes'),
+            InlineKeyboardButton("Iᴍᴀɢᴇ 💻", callback_data='image')
+            ],[
+            InlineKeyboardButton('🤡Fᴜɴ', callback_data='fun'), 
+            InlineKeyboardButton('🧾 Jsᴏɴ', callback_data='son'),
+            InlineKeyboardButton('🎤 Tᴛs', callback_data='ttss')
+            ],[
+            InlineKeyboardButton('💣 Pᴜʀɢᴇ', callback_data='purges'),
+            InlineKeyboardButton('✴️ Pɪɴɢ', callback_data='pings'),
+            InlineKeyboardButton('📸 Tᴇʟᴇɢʀᴀᴘʜ', callback_data='tele')
+            ],[
+            InlineKeyboardButton('🤔 Wʜᴏɪs', callback_data='whois'),
+            InlineKeyboardButton('Mᴜᴛᴇ 🚫', callback_data='restric'),
+            InlineKeyboardButton('Iɴ-Kɪᴄᴋ ⚠️', callback_data='zombies')
+            ],[
+            InlineKeyboardButton("Rᴇᴘᴏʀᴛ 📣", callback_data='report'),
+            InlineKeyboardButton("Yᴛ- Tʜᴜᴍʙ🖥️ ", callback_data='ytthumb'),
+            InlineKeyboardButton("Sᴛɪᴄᴋᴇʀ-Iᴅ 🔍", callback_data='sticker')
+            ],[
+            InlineKeyboardButton("Cᴏᴠɪᴅ 💉", callback_data='corona'),
+            InlineKeyboardButton("Aᴜᴅɪᴏ Bᴏᴏᴋ 📑", callback_data='abook'),
+            InlineKeyboardButton("Sʜᴏʀᴛ-Uʀʟ 🔖", callback_data='urlshort')
+            ],[
+            InlineKeyboardButton("𝖥𝗂𝗅𝖾 𝖲𝗍𝗈𝗋𝖾", callback_data='newdata'),
+            InlineKeyboardButton('𝖦𝗍𝗋𝖺𝗇𝗌', callback_data='gtrans')
+            ],[
+            InlineKeyboardButton('🏠 Hᴏᴍᴇ', callback_data='start'),
+            InlineKeyboardButton('🔮 Sᴛᴀᴛᴜs', callback_data='stats')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.answer("𝖶𝖾𝗅𝖼𝗈𝗆𝖾 𝗍𝗈 𝗆𝗒 𝖧𝖾𝗅𝗉 𝗆𝗈𝖽𝗎𝗅𝖾")
+        await query.message.edit_text(
+            text=script.HELP_TXT.format(query.from_user.mention),
+            reply_markup=reply_markup,
+            parse_mode='html'
+        )
     elif query.data == "about":
         buttons= [[
             InlineKeyboardButton('🤖 Updates', url='https://t.me/Latest_Movie_Mediaa'),
