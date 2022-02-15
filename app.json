@@ -88,6 +88,26 @@
             "description": "Imdb, the view of information when making True/False ",
             "required": false
         },
+        "IMDB_TEMPLATE": {
+            "description": "Imdb, template ",
+            "required": false
+        },
+        "PROTECT_CONTANT": {
+            "description": "for your increase ",
+            "required": false
+        },
+        "PUBLIC_FILE_STORE": {
+            "description": "making batch to public",
+            "required": false
+        },
+        "MELCOW_NEW_USERS": {
+            "description": " users welcome enable",
+            "required": false
+        },
+        "BATCH_FILE_CAPTION": {
+            "description": "batch, file caption",
+            "required": false
+        },
         "MAX_LIST_ELM": {
             "description": " the view of elements ",
             "required": false
