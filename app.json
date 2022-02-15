@@ -91,7 +91,7 @@
         },
         "IMDB_TEMPLATE": {
             "description": "Imdb, template ",
-            "required": false
+            "required": true
         },
         "PROTECT_CONTANT": {
             "description": "for your increase ",
