@@ -684,7 +684,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('🔍 𝗦𝗲𝗮𝗿𝗰𝗵 𝗠𝗼𝘃𝗶𝗲𝘀', switch_inline_query_current_chat=''),
             InlineKeyboardButton('🤖 𝗨𝗽𝗱𝗮𝘁𝗲𝘀', url='https://t.me/UrvashiTheaters_2')
             ],[
-            InlineKeyboardButton('ℹ️ 𝗙𝗶𝗹𝘁𝗲𝗿𝘀', callback_data='hellp'),
+            InlineKeyboardButton('ℹ️ 𝙃𝙚𝙡𝙥', callback_data='hellp'),
             InlineKeyboardButton('🔥 𝗚𝗿𝗼𝘂𝗽 🔥', url='https://t.me/UrvashiTheaters')
             ],[
             InlineKeyboardButton('❤ 𝗢𝘄𝗻𝗲𝗿 ❤', url='https://t.me/BlinderTG'),
@@ -728,8 +728,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "help":
         buttons = [[
-            InlineKeyboardButton('Mᴀɴᴜᴀʟ Fɪʟᴛᴇʀ', callback_data='manuelfilter'),
-            InlineKeyboardButton('Aᴜᴛᴏ Fɪʟᴛᴇʀ', callback_data='autofilter'),
+            InlineKeyboardButton('📞 Mᴀɴᴜᴀʟ', callback_data='manuelfilter'),
+            InlineKeyboardButton('Aᴜᴛᴏ 🤖', callback_data='autofilter'),
             InlineKeyboardButton('Cᴏɴɴᴇᴄᴛɪᴏɴ', callback_data='coct')
             ],[
             InlineKeyboardButton('Sᴏɴɢ  🎶', callback_data='songs'),
@@ -774,8 +774,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "hellp":
         buttons = [[
-            InlineKeyboardButton('Mᴀɴᴜᴀʟ Fɪʟᴛᴇʀ', callback_data='manuelfilter'),
-            InlineKeyboardButton('Aᴜᴛᴏ Fɪʟᴛᴇʀ', callback_data='autofilter'),
+            InlineKeyboardButton('📞 Mᴀɴᴜᴀʟ', callback_data='manuelfilter'),
+            InlineKeyboardButton('Aᴜᴛᴏ 🤖', callback_data='autofilter'),
             InlineKeyboardButton('Cᴏɴɴᴇᴄᴛɪᴏɴ', callback_data='coct')
             ],[
             InlineKeyboardButton('Sᴏɴɢ  🎶', callback_data='songs'),
