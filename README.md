@@ -1,7 +1,7 @@
 <details><summary>Deploy to Heroku</summary>
 <p>
 <br>
-<a href="https://heroku.com/deploy?template=https://github.com/Sreejithmadmax/Working-For-New/tree/master">
+<a href="https://heroku.com/deploy?template=https://github.com/Sreejithmadmax/LAST-IMDB-EVA/tree/master">
   <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
 </a>
 </p>
