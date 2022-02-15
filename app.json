@@ -88,6 +88,22 @@
             "description": "Imdb, the view of information when making True/False ",
             "required": false
         },
+        "MAX_LIST_ELM": {
+            "description": " the view of elements ",
+            "required": false
+        },
+        "UPSTREAM_REPO": {
+            "description": " Your repo",
+            "required": false
+        },
+        "SPELL_CHECK_REPLY": {
+            "description": "Spell check do you ",
+            "required": false
+        },
+        "LONG_IMDB_DESCRIPTION": {
+            "description": "Imdb, the view of information when making large amount like",
+            "required": false
+        },
         "SINGLE_BUTTON": {
             "description": "choose b/w single or double buttons https://github.com/EvamariaTG/EvaMaria/issues/22",
             "required": false
