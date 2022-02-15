@@ -86,7 +86,6 @@
         },
         "IMDB": {
             "description": "Imdb, the view of information when making True/False ",
-            "value": "True",
             "required": false
         },
         "IMDB_TEMPLATE": {
