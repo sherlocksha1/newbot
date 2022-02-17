@@ -19,7 +19,7 @@ logger = logging.getLogger(__name__)
 BATCH_FILES = {}
 
 @Client.on_message(filters.command("start"))
-async def start(bot, message):
+async def start(client, message):
     if message.chat.type in ['group', 'supergroup']:
         buttons = [
             [
@@ -76,7 +76,7 @@ async def start(bot, message):
         ]
 
         if message.command[1] != "subscribe":
-            btn.append([InlineKeyboardButton(" 🔄 Try Again", callback_data=f"checksub#{file_id}")
+            btn.append([InlineKeyboardButton(" 🔄 Try Again", callback_data=f"checksub#{message.command[1]}")])
         await client.send_message(
             chat_id=message.from_user.id,
             text="**നിങ്ങൾക്ക് സിനിമ കിട്ടണമെങ്കിൽ താഴെക്കാണുന്ന ᴊᴏɪɴ ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ എന്നത് ക്ലിക്ക് ചെയ്ത് Join ചെയ്ത് തിരികെ വന്ന് Try Again കൊടുത്ത ശേഷം സിനിമ കിട്ടുന്നതാണ്💯 ( പിന്നീട് വീണ്ടും ഇങ്ങനെ  ചെയ്യേണ്ട ആവിശ്യം ഇല്ല 👍 )**",
