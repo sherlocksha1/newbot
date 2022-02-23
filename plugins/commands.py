@@ -50,7 +50,7 @@ async def start(client, message):
             InlineKeyboardButton('ℹ️ 𝙃𝙚𝙡𝙥', callback_data='hellp'),
             InlineKeyboardButton('🔥 𝗚𝗿𝗼𝘂𝗽 🔥', url='https://t.me/new_movies_group_2021')
             ],[
-            InlineKeyboardButton('❤ 𝗢𝘄𝗻𝗲𝗿 ❤', url='https://t.me/BlinderTG'),
+            InlineKeyboardButton('❤ 𝗢𝘄𝗻𝗲𝗿 ❤', url='https://t.me/Peter_parker_10'),
             InlineKeyboardButton('💖 𝗖𝗵𝗮𝗻𝗻𝗲𝗹 💖', url='https://t.me/new_all_movies_club')
         ]]  
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -94,7 +94,7 @@ async def start(client, message):
             InlineKeyboardButton('ℹ️ 𝙃𝙚𝙡𝙥', callback_data='hellp'),
             InlineKeyboardButton('🔥 𝗚𝗿𝗼𝘂𝗽 🔥', url='https://t.me/new_movies_group_2021')
             ],[
-            InlineKeyboardButton('❤ 𝗢𝘄𝗻𝗲𝗿 ❤', url='https://t.me/BlinderTG'),
+            InlineKeyboardButton('❤ 𝗢𝘄𝗻𝗲𝗿 ❤', url='https://t.me/Peter_parker_10'),
             InlineKeyboardButton('💖 𝗖𝗵𝗮𝗻𝗻𝗲𝗹 💖', url='https://t.me/new_all_movies_club')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
